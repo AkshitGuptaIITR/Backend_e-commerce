@@ -1,0 +1,14 @@
+ALL THIS IS DONE IN THE GIT BASIN IN THE FOLDER THAT IS TO BE USED.
+We use 
+npm init
+To have start and create the starting package.jsom file which will contain the key words that were given in the declaration process.
+
+Then we use the 
+npm --save express express-validator mongoose
+to create another file and in order to use them.
+
+now we will create the index.js file in the src FOLDER
+In the index.js we will use the require method to use the library that we have installed with the help of the node and npm in the git BASIN
+
+We will also create a .env file in order to create the servr port which ever you want.
+
