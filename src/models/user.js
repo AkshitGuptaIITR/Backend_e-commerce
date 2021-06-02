@@ -1,5 +1,6 @@
 const mongoose=require('mongoose');
 const bcrypt=require('bcrypt');
+//Library that is used to maintain the hash password usefull in order to convert the passwords in the safe form.
 
 const userSchema = new mongoose.Schema({
     firstName:{

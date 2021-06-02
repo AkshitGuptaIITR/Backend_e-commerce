@@ -19,7 +19,7 @@ exports.addItemToCart = (req, res) => {
 
                 if (isItemAdded) {
                     //No errors
-                    // .$ will add the item to the respective obect only
+                    // .$ will add the item to the respective object only
                     // console.log(product);
 
                     Cart.findOneAndUpdate({ "user": req.user._id, "cartItems.product": product }, {
