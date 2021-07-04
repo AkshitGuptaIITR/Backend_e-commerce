@@ -25,6 +25,7 @@ function createCategories(categories, parentID = null) {
             _id: cate._id,
             name: cate.name,
             slug: cate.slug,
+            parentID: cate.parentID,
             children: createCategories(categories, cate._id)
         });
     }
