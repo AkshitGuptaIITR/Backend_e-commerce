@@ -11,6 +11,7 @@ const userRouter = require('./routes/user');
 const adminRoutes = require('./routes/admin/user');
 const productRoutes = require('./routes/product');
 const cartRouter = require('./routes/cart');
+const initialDataRoutes = require('./routes/admin/initialData');
 
 //routes
 //here we are importing the routes from the user
@@ -49,6 +50,8 @@ app.use('/api', adminRoutes);
 app.use('/api', category);
 app.use('/api', productRoutes);
 app.use('/api', cartRouter);
+app.use('/api', initialDataRoutes);
+
 // This is used for to excess the server that we have created 
 //We can chech the server on the git Basin by node src/index.js
 //To Create our first api

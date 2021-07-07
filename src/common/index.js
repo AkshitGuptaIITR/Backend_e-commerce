@@ -12,7 +12,7 @@ exports.requireSignin=(req,res,next)=>{
     //This shows that the token is been used
     
     jwt.verify(token , process.env.JWT_SECRECT, (err, decoded) => {
-        // console.log(decoded)
+        console.log(decoded)
         req.user = decoded;
     });
     // console.log(user1)
